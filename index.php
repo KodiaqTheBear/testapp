@@ -29,10 +29,13 @@ spl_autoload_register(static function ($class) {
 $request = new \classes\Request();
 Debugger::barDump($request->getUrlPart(\classes\Config::CONTROLLER_NAME), \classes\Config::CONTROLLER_NAME);
 
+// Zalogování pomocí debuggeru
+Debugger::log($request, "data.post");
 
 // Vložení datového souboru
 // Ten obsahuje i vložení hlavičky (inc/head.php)
 require_once 'data/default.php';
+
 
 
 // Vložení patičky

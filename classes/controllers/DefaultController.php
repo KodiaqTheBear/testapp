@@ -45,7 +45,7 @@ class DefaultController extends BaseController
             $this->actionDefault();
         } elseif ($action === 'insert') {
             // Volej metodu actionInsert
-            // $this->actionInsert();
+            $this->actionInsert();
         }
 
         $this->render();
